@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'font';
+  src: url(fonts/MAWAVA.otf);
+}
+@font-face {
+  font-family: 'font1';
+  src: url(fonts/Florentia-Extralight-trial.ttf);
+}
+*{
+  margin: 50px;
+  border: 0px;
+}
+.main{
+  margin-left: 75px;
+  margin-top: 25px;
+  margin-bottom: 75px;
+  margin-right: 75px;
+  border: 0px;
+}
+h1{
+  font-family: 'font' ;
+  font-size: 112px;
+  text-align: center;
+  background-color:beige;
+  border-radius: 25px;
+  padding-top: 25px;
+}
+.title1 p{
+  font-family: 'font1' ;
+  font-size: 20px;
+  font-weight:bolder;
+  text-align: left;
+  line-height: 25px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+h3{
+  font-family: 'font1' ;
+  font-size: 30px;
+  text-align: left;
+}
+.container img {
+  width: 40%;
+  border-radius: 10px;
+  margin-right: 0px;
+}
+.cakes{
+  font-family: 'font1';
+  font-size: large;
+  text-align: left;
+  line-height: 28px;
+  width: 60%;
+}
+/*Below code is for smaller screens*/
+@media (max-width: 768px) {
+  .container {
+      flex-direction:column;
+  }
+  .container img {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+  .cakes {
+      width: 100%;
+  }
+}
+.signup{
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: 100px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding-top:18px ;
+  padding-bottom:12px ;
+  background-color: beige;
+}
+.signup form{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+.signup label{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: left;
+  font-family: 'font1';
+  font-size: 22px;
+  font-weight: bold;
+}
+.signup input{
+  width: 80%;
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.button button[type="submit"]{
+  align-content: center;
+  width: 150px;
+  height: 40px;
+  margin-top: 15px;
+  border-radius: 20px;
+  background-color: darkred;
+  font-family: "font1";
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fff;
+}
+.button button:hover{
+  background-color: indianred;
+}
